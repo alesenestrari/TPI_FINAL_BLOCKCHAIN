@@ -1,0 +1,103 @@
+{
+	"id": "7be3250dacc3ad614396007adc55b851",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/TaskStatus.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\npragma solidity ^0.8.3;\n\nenum TaskStatus {\n    ToDo,\n    Doing,\n    Done\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"contracts/TaskStatus.sol": {
+				"ast": {
+					"absolutePath": "contracts/TaskStatus.sol",
+					"exportedSymbols": {
+						"TaskStatus": [
+							5
+						]
+					},
+					"id": 6,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".3"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "36:23:0"
+						},
+						{
+							"canonicalName": "TaskStatus",
+							"id": 5,
+							"members": [
+								{
+									"id": 2,
+									"name": "ToDo",
+									"nameLocation": "83:4:0",
+									"nodeType": "EnumValue",
+									"src": "83:4:0"
+								},
+								{
+									"id": 3,
+									"name": "Doing",
+									"nameLocation": "93:5:0",
+									"nodeType": "EnumValue",
+									"src": "93:5:0"
+								},
+								{
+									"id": 4,
+									"name": "Done",
+									"nameLocation": "104:4:0",
+									"nodeType": "EnumValue",
+									"src": "104:4:0"
+								}
+							],
+							"name": "TaskStatus",
+							"nameLocation": "66:10:0",
+							"nodeType": "EnumDefinition",
+							"src": "61:49:0"
+						}
+					],
+					"src": "36:74:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

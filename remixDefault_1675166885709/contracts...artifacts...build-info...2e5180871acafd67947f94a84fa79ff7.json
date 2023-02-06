@@ -1,0 +1,119 @@
+{
+	"id": "2e5180871acafd67947f94a84fa79ff7",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/TaskStatus.sol": {
+				"content": "enum TaskStatus {\n    ToDo,\n    Doing,\n    Done\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/TaskStatus.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/TaskStatus.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.7;\"\n--> contracts/TaskStatus.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.7;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/TaskStatus.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/TaskStatus.sol": {
+				"ast": {
+					"absolutePath": "contracts/TaskStatus.sol",
+					"exportedSymbols": {
+						"TaskStatus": [
+							4
+						]
+					},
+					"id": 5,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"canonicalName": "TaskStatus",
+							"id": 4,
+							"members": [
+								{
+									"id": 1,
+									"name": "ToDo",
+									"nameLocation": "22:4:0",
+									"nodeType": "EnumValue",
+									"src": "22:4:0"
+								},
+								{
+									"id": 2,
+									"name": "Doing",
+									"nameLocation": "32:5:0",
+									"nodeType": "EnumValue",
+									"src": "32:5:0"
+								},
+								{
+									"id": 3,
+									"name": "Done",
+									"nameLocation": "43:4:0",
+									"nodeType": "EnumValue",
+									"src": "43:4:0"
+								}
+							],
+							"name": "TaskStatus",
+							"nameLocation": "5:10:0",
+							"nodeType": "EnumDefinition",
+							"src": "0:49:0"
+						}
+					],
+					"src": "0:49:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

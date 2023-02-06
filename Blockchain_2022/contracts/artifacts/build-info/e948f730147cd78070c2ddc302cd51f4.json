@@ -1,0 +1,106 @@
+{
+	"id": "e948f730147cd78070c2ddc302cd51f4",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/TaskStatus.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity >=0.7.0 <0.9.0;\r\n\r\nenum TaskStatus {\r\n    ToDo,\r\n    Done,\r\n    Doing\r\n}\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"contracts/TaskStatus.sol": {
+				"ast": {
+					"absolutePath": "contracts/TaskStatus.sol",
+					"exportedSymbols": {
+						"TaskStatus": [
+							5
+						]
+					},
+					"id": 6,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "39:31:0"
+						},
+						{
+							"canonicalName": "TaskStatus",
+							"id": 5,
+							"members": [
+								{
+									"id": 2,
+									"name": "ToDo",
+									"nameLocation": "97:4:0",
+									"nodeType": "EnumValue",
+									"src": "97:4:0"
+								},
+								{
+									"id": 3,
+									"name": "Done",
+									"nameLocation": "108:4:0",
+									"nodeType": "EnumValue",
+									"src": "108:4:0"
+								},
+								{
+									"id": 4,
+									"name": "Doing",
+									"nameLocation": "119:5:0",
+									"nodeType": "EnumValue",
+									"src": "119:5:0"
+								}
+							],
+							"name": "TaskStatus",
+							"nameLocation": "79:10:0",
+							"nodeType": "EnumDefinition",
+							"src": "74:53:0"
+						}
+					],
+					"src": "39:90:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,201 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"name": "create",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "task",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "text",
+								"type": "string"
+							},
+							{
+								"internalType": "enum TaskStatus",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Task",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "toDoing",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "toDone",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "toToDo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"name": "update",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "updateTaskPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/4_ToDoList.sol": "ToDoList"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/4_ToDoList.sol": {
+			"keccak256": "0xcdb244cb34716443915d69455e7248673586b68be57e59344fd56214bc27c918",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://34077096c3672d4fd56fedf360a8f833b1abeaf0a93fd2c543952fd559f7dfe0",
+				"dweb:/ipfs/QmWjYhBRmxF61gN4qPwk6voif4Dw8fjgwPhQDTkuHGvvWf"
+			]
+		},
+		"contracts/Task.sol": {
+			"keccak256": "0xe8ff6f34742b47ae8e4f08e6b5d6684732851e368026723a4d990585ff584eed",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://86cc8e00a9742b8c8df8b2f4738b6ba9c2ee6a66b34f9a534b05868c2b36f1b7",
+				"dweb:/ipfs/QmW2wUonHzdAa6foMbDEhEZddy7KWCXz8a5sjzFdCJHfuH"
+			]
+		},
+		"contracts/TaskStatus.sol": {
+			"keccak256": "0x5b4e86ee5b7ba2886d1ae62d446a4c7c88009842b7885ff0557c1c8e08f53829",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://e91195ff6e248a219fab4097ac4bba744e19a3239c14116a767b27e0f2dd4b36",
+				"dweb:/ipfs/QmYRojShLtnKJPkmvGRQZmXg5YgqDefjZM8dchY3qULtcu"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,201 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"name": "create",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "setDoing",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "setDone",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "setToDo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "task",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "text",
+								"type": "string"
+							},
+							{
+								"internalType": "enum TaskStatus",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct Task",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"name": "update",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "updateTaskPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ToDoList.sol": "ToDoList"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Task.sol": {
+			"keccak256": "0xd074c14f69890764ff64838ba3a4042f2cc60e9a5c04ec0f6ab13ed7b7dc7124",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://212654cbdaf96d126ccb0e0633a1d6ac7aa442fe135cb88ec9ed6f9ef18bbe28",
+				"dweb:/ipfs/QmbnN1o7RhUsi4EZMdKvtabREifAQgmVTwRmoD7ZN4jtu3"
+			]
+		},
+		"contracts/TaskStatus.sol": {
+			"keccak256": "0x45b7cfc4a1e6568689ce8ee470642939ce808e0575ce7c508e4fbd987bcd882f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1aa672c72515c79008863d36d80386aea6f81bd43050ecba5b7d475c70ab2852",
+				"dweb:/ipfs/QmQ53a5Po3nSkwD7vwKzZMxJ7sEFKd5cEkkYbjc9Uo9vzJ"
+			]
+		},
+		"contracts/ToDoList.sol": {
+			"keccak256": "0xafebba9999561919ac98851c9d48bd18d6234018b6b2fa91db9297b76c3720d3",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://e2ffb4aa30cfd2715853e0d5c6c64ceb638d754ebc186f45de0302e9208cf5d0",
+				"dweb:/ipfs/QmPZ4AGtpRRGtHueXAjLxB7xLkB1YcAExeEKa9PUDFk7xh"
+			]
+		}
+	},
+	"version": 1
+}
